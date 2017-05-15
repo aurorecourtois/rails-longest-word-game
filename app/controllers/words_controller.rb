@@ -14,6 +14,7 @@ class WordsController < ApplicationController
     @end_time = Time.now
     @score = run_game(@guess, @grid, @start_time, @end_time)[:score]
     @time = run_game(@guess, @grid, @start_time, @end_time)[:time]
+    @message = run_game(@guess, @grid, @start_time, @end_time)[:message]
 
   end
 
